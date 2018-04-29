@@ -11,13 +11,13 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>REGISTRATION Setup</title>
+  <title>Install Party 9 | Inscriptions</title>
   <link rel="stylesheet" href="css/style.css">
   <!--[if lt IE 9]><script
 src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 <link rel="icon"
-	 href="../logo.png"/>
+	 href="../images/logo.png"/>
 
 
 <script>
@@ -40,7 +40,9 @@ window.onload=function(){
 </head>
 <body>
 
-  <h1 class="register-title">Install Party 9</h1>
+	<p style="text-align: center"><img src="../images/ip9-logo.svg" style="height: 160px; width: 210px;"></p>
+
+  <!-- <h1 class="register-title">Install Party 9</h1> -->
   <form class="register" method="post" action="../index.php">
 	<?php
 		if(isset($_SESSION['error'])){
@@ -83,7 +85,7 @@ class="register-switch-input" checked>
 
 	 <input type="checkbox" name="ctf" value="ctf"> Capture The Flag. <br>
 	 <input type="checkbox" name="git" value="git"> Git<br>
-	 <input type="checkbox" name="gimp" value="gimp"> GIMP Inkscape<br>
+	 <input type="checkbox" name="gimp" value="gimp"> GIMP/Inkscape<br>
 </div>
 <br/><br/><br/> 
 

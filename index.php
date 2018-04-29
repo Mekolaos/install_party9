@@ -56,12 +56,12 @@ session_start();
     <!--=====================================================-->
     <!--==================== NAVIGATION =====================-->
     <!--=====================================================-->
-    <section style="background-position:fixed;background:url(images/degradé_v4.png)bottom no-repeat fixed #1f324c;background-size:cover;height:900px;width:100%;text-align:center;box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);" class="hero_fullscreen mdl-color--primary mdl-color-text--color-1 menu_bar-waypoint " data-animate-down="menu_bar-hide" data-animate-up="menu_bar-hide" id="iphome">
+    <section style="background-position:fixed;background:url(images/degradé_v4.png)bottom no-repeat #1f324c;background-size:cover;height:900px;width:100%;text-align:center;box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);" class="hero_fullscreen mdl-color--primary mdl-color-text--color-1 menu_bar-waypoint " data-animate-down="menu_bar-hide" data-animate-up="menu_bar-hide" id="iphome">
         <!--************ Logo and navigation MAIN ***************-->
         <div id="topBarMain" class="top_bar home_anim1">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-left">
-                    <nav class="navigation_desktop visible-lg visible-md visible-sm navigation_js" style="position: fixed;">
+                    <nav class="navigation_desktop visible-lg visible-md visible-sm navigation_js" ">
                         <ul>
                             <li><a href="#iphome" >Accueil</a></li>
                             <li><a href="#history">Présentation</a></li> 
@@ -78,10 +78,10 @@ session_start();
             </div>
         </div>
         <!--******************** Main content ***********************-->
-        <div class="container" id="main_content">
+        <div class="container" id="main_content" style="margin-top: 60px;">
             <div class="content_container row ip_home_content"  >
              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ip_main align-center home_anim2">
-                <img src="images/ip9-final.svg" class="home_anim5 logo"/>  
+                <img src="images/ip9-logo.svg" class="home_anim5 logo"/>  
              </div>
             </div>  
         </div>
@@ -137,12 +137,12 @@ session_start();
                 <div class="container">
             <div class="row">
                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 align-center features_anim5">
-                     <img id="osLogo" src="images/the_basics.svg" height="400px" class="home_anim5 logo"/>
+                     <img id="osLogo" src="images/thebasics-logo.svg" style="height: 190px;" class="home_anim5 logo"/>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 align-center features_anim6">
                      
                      <p class="text_desc">
-                        Pour cette neuvième edition de l'Install Party, l'idée de la thématique sera d'élargir le rayon de la communauté du Libre et de l'OpenSource, à travers une journée exclusivement &laquo; OpenSource Achievements &raquo;.
+                        Pour cette neuvième edition de l'Install Party, l'idée de la thématique sera d'élargir le rayon de la communauté du Libre et de l'OpenSource, à travers une journée exclusivement &laquo; The Basics &raquo;.
                         Nos conférences, seront animées par des experts de la philosophie, et pour la première fois, serviront de guide pour les plus ambitieux, sur comment réussir son projet OpenSource et comment protéger ses droits sur son propre projet ?
                         Qu'est-ce qu'un projet OpenSource ? Existe-il des exemples qui ont pu réussir en faisant de leur projets, des projets communautaires ? Pourquoi un projet communautaire ? Comment contribuer à un projet OpenSource ? Sont des questions pour lesquelles Open Minds Club tient à apporter des réponses à travers une série de conférences, des ateliers applicatifs, et évidemment des installations du système d'exploitation Libre et OpenSource GNU/Linux; ainsi que le dernière version Ubuntu 18.04 en exclusivité lors de cette Install Party 9 !
 
@@ -231,7 +231,7 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                   <span class="close cursor" onclick="closeModal()">&times;</span>
                   <div class="modal-content"!-->
                  
-                <div class="item"><a href="images/celia.png" data-lity="gal"><img src="images/celia.png" class="himage"  height="100px" /> <div class="middle"><div class="kakashi"><a href="images/celia.png" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
+                <div class="item"><a href="images/celia.png" data-lity="gal"><img src="images/graphisme.png" class="himage" /> <div class="middle"><div class="kakashi"><a href="images/celia.png" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
                 <div class="item""><a href="images/ip7_team.png" data-lity="gal"><img src="images/ip7_team.png" class="himage" height="200px" width="300px" /><div class="middle"><div class="kakashi"><a href="images/ip7_team.png" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
                 <div class="item lsb-preview"><h1>3</h1></div>
                 <div class="item lsb-preview"><h1>4</h1></div>
@@ -242,27 +242,36 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 align-center features_anim7" >
                     <h4 class="section_titles" id="heightEd" style="color: #364e88"> Workshops</h4>  
                 </div>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 
-              <div id="owl-demo" class="owl-carousel owl-theme" style="width: 300px; ">
+              <div id="owl-demo" class="owl-carousel owl-theme" style="width: 300px; margin: auto; ">
+
                 <!--div id="myModal" class="modal">
                   <span class="close cursor" onclick="closeModal()">&times;</span>
                   <div class="modal-content"!-->
                  
-                <div class="item"><a href="images/celia.png" data-lity="lad"><img class="chnichla" src="images/celia.png"  height="100px" /><div class="middle"><div class="kakashi"><a href="images/celia.png" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
-                <div class="item lsb-preview"><a href="images/ip7_team.png" data-lity="lad"><div class="middle"><div class="kakashi"><a href="/images/celia.png" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div><img class="chnichla" src="images/ip7_team.png" height="200px" width="300px" /></div>
-                <div class="item lsb-preview"><h1>3</h1></div>
-                <div class="item lsb-preview"><h1>4</h1></div>
-                <div class="item lsb-preview"><h1>5</h1></div>
-                <div class="item lsb-preview"><h1>6</h1></div>
+                <div class="item"><a href="images/ws_gimpinkscape.jpg" data-lity="lad"><img class="himage" src="images/mntr-graphisme.png" style="height: 200px;" /><div class="middle"><div class="kakashi"><a href="images/ws_gimpinkscape.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
+                <div class="item"><a href="images/ws_ctf.jpg" data-lity="lad"><img class="himage" src="images/mntr-ctf.png" style="height: 200px;" /><div class="middle"><div class="kakashi"><a href="images/ws_ctf.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></div>
+                <div class="item"><a href="images/ws_git.jpg" data-lity="lad"><img class="himage" src="images/mntr-git.png" style="height: 200px;" /><div class="middle"><div class="kakashi"><a href="images/ws_git.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></div>
               </div>
             </div>
 
 
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 align-center features_anim7" >
                     <h4 class="section_titles" id="heightEd" style="color: #364e88">Install the free OS: </h4>
+                    
+                    
+                    
                      
                 </div>
+                <br/><br/>
+                <p class="text_desco" style="text-align: center;" > Installez Ubuntu 18.04 :</p>
+                    <!--<a href="images/ubuntux.jpg" data-lity="frank"> <img class="himage" src="images/Ubuntu.jpg"/></a> -->
+                    
+                    <p class="text_desc" style="text-align: center;"> Installez Manjaro :</p>
+                    <!-- <a href="images/manjarox.jpg" data-lity="frank"><img class="himage" src="images/Manjaro.jpg"/></a> -->
+                    
+                    <p class="text_desc" style="text-align: center;"> Pour une installation dans de bonnes conditions, sauvegardez vos fichiers importants et défragmentez votre disque dûr à l'avance. Bonne installation !</p>
 </section>
 
 
@@ -316,8 +325,8 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-lg-10 col-md-offset-2 col-lg-offset-1 align-center features_anim3">
                     <h4 class="section_titles" style="color: #364e88"> Programme</h4>
-                     <!--h4 id="ip_soon">En cours...</h4-->
-                     <img src="images/Tableau_IP8.png" id="prgm" />
+                     <h4 id="ip_soon">En cours...</h4>
+                    <!--  <img src="images/programme.png" id="prgm" /-->
                 </div>
             </div>
         </div>
@@ -368,7 +377,7 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 align-center features_anim6">
                     <h4 class="section_titles" id="heightEd" style="color: #364e88"> pourquoi devenir sponsor ?</h4>
                      <p class="text_desc">
-                      Depuis la création du club, la GNU/Linux Install Party est organisée chaque année et a toujours été totalement indépendante et financée par les contributions des membres et de la communauté du Libre Open Source. Pour cette huitième édition, nous avons vu plus grand, et pour ce faire nous avons décidé d’ouvrir la porte aux sponsors et de s’inscrire comme acteur important de notre communauté en contribuant du mieux qu’ils peuvent au bon déroulement de notre événement.
+                      Depuis la création du club, la GNU/Linux Install Party est organisée chaque année et a toujours été totalement indépendante et financée par les contributions des membres et de la communauté du Libre Open Source. Pour cette neuvième édition, nous avons vu plus grand, et pour ce faire nous avons décidé d’ouvrir la porte aux sponsors et de s’inscrire comme acteur important de notre communauté en contribuant du mieux qu’ils peuvent au bon déroulement de notre événement.
                      </p>
                    </div>
                     <form method="get" action="IP9_Sponso.pdf" target="_blank">
@@ -399,10 +408,124 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                     <h4 class="section_titles" style="color: #364e88">Organisation</h4>
 
             </div>
+            <div id="organiz" class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 align-center screenshots_anim4">
+                    <!-- 1st Line -->
+                    <div id="mem1" onclick="myOrgFunction(1,2)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                        <img src="images/Amira-min.png" width="100%" />
+                    </div>
+                    <div id="memDesc1"  class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
+                       <p class="nameMem"> Amira</p>
+                       <p class="nameMem1"> Ketfi</p>
+                       <p class="postMem">Chef de projet</p>
+                       <p class="equipeMem">IP9</p>
+                    </div>
+                    
+                     <div id="mem2" onclick="myOrgFunction(2,3)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                        <img src="../images/ip8/organizers/yanis.png" width="100%" />
+                    </div>
+                    <div id="memDesc2" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
+                       <p class="nameMem"> Lisa</p>
+                       <p class="nameMem1"> Aït Mouloud</p>
+                       <p class="postMem">Chargé de</p>
+                       <p class="equipeMem">communication</p>
+                    </div>
+
+                    <div id="mem3" onclick="myOrgFunction(3,7)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                        <img src="../images/ip8/organizers/said.png" width="100%" />
+                    </div>
+                    
+                    
+                    <div id="mem4" onclick="myOrgFunction(4,8)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                        <img src="../images/ip8/organizers/lisa.png" width="100%" />
+                    </div>
+                    <!--***** -->
+
+                    <!-- 2nd Line -->
+
+                    <div id="mem5" onclick="myOrgFunction(5,6)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                        <img src="images/Redha-min.png" width="100%" />
+                    </div>
+                    <div id="memDesc5" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
+                       <p class="nameMem"> Redha</p>
+                       <p class="nameMem1"> Mebarek</p>
+                       <p class="postMem">Chef d'équipe</p>
+                       <p class="equipeMem">tech</p>
+                    </div>
+
+                    <div id="mem6" onclick="myOrgFunction(6,7)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                        <img src="../images/ip8/organizers/ouidad.png" width="100%" />
+                    </div>
+                    <div id="memDesc6" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
+                       <p class="nameMem"> Fella</p>
+                       <p class="nameMem1"> Lazouni</p>
+                       <p class="postMem">Chef d’équipe</p>
+                       <p class="equipeMem">réception</p>
+                    </div>
+
+                    <div id="memDesc3" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
+                       <p class="nameMem"> Merouane</p>
+                       <p class="nameMem1"> Houmel</p>
+                       <p class="postMem2">Webmaster</p>
+                    </div>
+                    <div id="memDesc8" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
+                       <p class="nameMem"> Sofiane</p>
+                       <p class="nameMem1"> MEdjkoune</p>
+                       <p class="postMem">Chef d'équipe</p>
+                       <p class="equipeMem">logistique</p>
+                    </div>
+                    <div id="mem7" onclick="myOrgFunction(7,8)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                        <img src="images/Salim-min.png" width="100%" />
+                    </div>
+                    <div id="memDesc7" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
+                       <p class="nameMem"> Salim</p>
+                       <p class="nameMem1"> Feddal</p>
+                       <p class="postMem">Chargée des</p>
+                       <p class="equipeMem">activités</p>
+                    </div>
+                    
+
+                    <div id="memDesc4" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
+                       <p class="nameMem"> Manel</p>
+                       <p class="nameMem1" id="lis"> Mensouri</p>
+                       <p class="postMem">Chargée des</p>
+                       <p class="equipeMem">workshops</p>
+                    </div>
+                    <div id="mem8" onclick="myOrgFunction(8,7)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                        <img src="../images/ip8/organizers/sofiane.png" width="100%" />
+                    </div>
+                    <div id="mem9" onclick="myOrgFunction(9,10)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                        <img src="images/Yacin-min.png" width="100%" />
+                    </div>
+                    <div id="memDesc9"  class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
+                       <p class="nameMem"> Yacine</p>
+                       <p class="nameMem1"> Arab</p>
+                       <p class="postMem">Chef de la</p>
+                       <p class="equipeMem"> team design</p>
+                    </div>
+                    <div id="mem10" onclick="myOrgFunction(10,11)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                        <img src="images/Mahfoud-min.png" width="100%" />
+                    </div>
+                    <div id="memDesc10"  class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
+                       <p class="nameMem"> Mahfoud</p>
+                       <p class="nameMem1"> Merzoug</p>
+                       <p class="postMem">Chargé des speakers</p>
+                    </div>
+                    <div id="mem11" onclick="myOrgFunction(11,10)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                        <img src="images/Rayon-min.png" width="100%" />
+                    </div>
+                    <div id="memDesc11"  class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
+                       <p class="nameMem"> Rayane</p>
+                       <p class="nameMem1"> Bourkaïb</p>
+                       <p class="postMem">Chef de la</p>
+                       <p class="equipeMem"> team stand</p>
+                    </div>
+                    <!--***** -->
+                  
+              </div>
           </div>
         </div>
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 align-center">
-            <p class="text_desco">Merci à toute l'équipe d'OMC !</p> 
+            <p class="text_desco">Et merci à toute l'équipe d'OMC pour leur travail !</p> 
           </div>
             <div > 
                     <p class="org"><img src="images/la_team.jpg" /> </p>

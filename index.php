@@ -34,7 +34,7 @@ session_start();
     <!--=====================================================-->
     <!--==================== Preloader ======================-->
     <!--=====================================================-->
-    <!--div id="preloader">
+    <div id="preloader">
         <div id="status"><div class="mdl-spinner mdl-js-spinner is-active" ></div></div>
     </div>
     

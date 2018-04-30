@@ -343,6 +343,33 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
     <!--=====================================================-->
     <!--===================== Organizers ====================-->
     <!--=====================================================-->
+     <script>        /********* Organizers ********/
+function myOrgFunction($myPic, $myDesc) {
+      if (window.getComputedStyle(document.querySelector('#memDesc'+$myPic)).display=='none'){
+            document.querySelector("#memDesc"+$myPic).style.display="block";
+            document.querySelector("#mem"+$myDesc).style.display="none";
+            document.querySelector("#memDesc"+$myPic).style.cursor="default";
+            for(var j=1;j<=8;j++) {
+                    if(j != $myPic ){
+                    document.querySelector("#mem"+j).style.filter=" opacity(50%)";
+                    $("#mem"+j).children().bind('click', function(){ return false; });
+                    document.querySelector("#mem"+j).style.cursor="default";
+                    }
+            }
+      }
+      else{
+            document.querySelector("#memDesc"+$myPic).style.display="none";
+            document.querySelector("#mem"+$myDesc).style.display="block";
+            for(var j=1;j<=8;j++) {
+                    if(j != $myPic ){
+                    document.querySelector("#mem"+j).style.filter=" blur(0px)";
+                    $("#mem"+j).children().unbind('click');
+                    document.querySelector("#mem"+j).style.cursor="pointer";
+                    }
+            }
+      } 
+}
+             </script>
     <section style="background-position:fixed;background-color: #fff; 
         background-size:cover;text-align:center;" id="organizers" class="mdl-color-text--color-1 subsection_bureau">
         <div class="container">

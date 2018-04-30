@@ -34,7 +34,7 @@ session_start();
     <!--=====================================================-->
     <!--==================== Preloader ======================-->
     <!--=====================================================-->
-    <!--div id="preloader">
+    <div id="preloader">
         <div id="status"><div class="mdl-spinner mdl-js-spinner is-active" ></div></div>
     </div>
     
@@ -106,9 +106,6 @@ session_start();
                     
                 </ul>   
                 <div id="countDown" >
-                    <!--div class="align-center ">
-                      <img src="../images/ip8/organizers/kems.png" id="kamel" />
-                    </div-->
                       <div>
                             <span id="day" class="countTime" ></span>
                             <span id="dayWord" class="countWord"></span>
@@ -227,15 +224,12 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                 <br/><br/>
               <div id="owl-demo" class="owl-carousel owl-theme" style="width: 300px">
 
-                <!--div id="myModal" class="modal">
-                  <span class="close cursor" onclick="closeModal()">&times;</span>
-                  <div class="modal-content"!-->
                  
-                <div class="item"><a href="images/celia.png" data-lity="gal"><img src="images/graphisme.png" class="himage" /> <div class="middle"><div class="kakashi"><a href="images/celia.png" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
-                <div class="item""><a href="images/ip7_team.png" data-lity="gal"><img src="images/ip7_team.png" class="himage" height="200px" width="300px" /><div class="middle"><div class="kakashi"><a href="images/ip7_team.png" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
-                <div class="item lsb-preview"><h1>3</h1></div>
-                <div class="item lsb-preview"><h1>4</h1></div>
-                <div class="item lsb-preview"><h1>5</h1></div>
+                <div class="item"><a href="images/NLP_descriptions.jpg" data-lity="gal"><img src="images/nlp.png" class="himage" /> <div class="middle"><div class="kakashi"><a href="images/NLP_descriptions.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
+                <div class="item""><a href="images/sage_descriptions.jpg" data-lity="gal"><img src="images/sagem.png" class="himage" height="200px" width="300px" /><div class="middle"><div class="kakashi"><a href="images/sage_descriptions.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
+                <div class="item lsb-preview"><a href="images/open_stack_descriptions.jpg" data-lity="gal"><img src="images/openstack.png" class="himage" height="200px" width="300px" /><div class="middle"><div class="kakashi"><a href="images/open_stack_descriptions.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
+                <div class="item lsb-preview"><a href="images/wiseway_descriptions.jpg" data-lity="gal"><img src="images/openproj.png" class="himage" height="200px" width="300px" /><div class="middle"><div class="kakashi"><a href="images/images/wiseway_descriptions.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
+                <div class="item lsb-preview"><a href="images/debat_descriptions.jpg" data-lity="gal"><img src="images/elquaada.png" class="himage" height="200px" width="300px" /><div class="middle"><div class="kakashi"><a href="images/debat_descriptions.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
                 <div class="item lsb-preview"><h1>6</h1></div>
               </div>
               
@@ -245,10 +239,6 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 
               <div id="owl-demo" class="owl-carousel owl-theme" style="width: 300px; margin: auto; ">
-
-                <!--div id="myModal" class="modal">
-                  <span class="close cursor" onclick="closeModal()">&times;</span>
-                  <div class="modal-content"!-->
                  
                 <div class="item"><a href="images/ws_gimpinkscape.jpg" data-lity="lad"><img class="himage" src="images/mntr-graphisme.png" style="height: 200px;" /><div class="middle"><div class="kakashi"><a href="images/ws_gimpinkscape.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
                 <div class="item"><a href="images/ws_ctf.jpg" data-lity="lad"><img class="himage" src="images/mntr-ctf.png" style="height: 200px;" /><div class="middle"><div class="kakashi"><a href="images/ws_ctf.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></div>
@@ -273,47 +263,6 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                     
                     <p class="text_desc" style="text-align: center;"> Pour une installation dans de bonnes conditions, sauvegardez vos fichiers importants et défragmentez votre disque dûr à l'avance. Bonne installation !</p>
 </section>
-
-
-
-
-
-
-
-              
-
-
-
-
-
-
-
-
-
-              
-     <!-- Trigger/Open The Modal -->
-  <!-- ================================================ -->
-       <!-- ============INSTALL============== -->
-  <!-- ================================================ -->
-  
-
-
-<!--*********************** -->
-                    <!--2nd line -->
-                   
-                    <!--***** -->
-                    <!--3rd line -->
-                    <!--***** -->
-                    <!--4rd line -->
-                    
-                    <!--************-->
-  <!-- ================================================ -->
-  <!-- ============REGISTRATION WORKSHOPS============== -->
-  <!-- ================================================ -->
-   
-                    <!--***** --> 
-                    <!-- 5th line -->
-                    
     
 
     <!--=====================================================-->
@@ -519,7 +468,7 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                        <p class="postMem">Chef de la</p>
                        <p class="equipeMem"> team stand</p>
                     </div>
-                    <div id="mem12" onclick="myOrgFunction(12,11)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                    <div id="mem12" onclick="myOrgFunction(12,10)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
                         <img src="images/nadjib.png" width="100%" />
                     </div>
                     <div id="memDesc12"  class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">

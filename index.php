@@ -182,8 +182,8 @@ if(isset($_POST)){
       $prenom = $_POST['prenom'];
       sendEmail($email,$prenom);
       // Enter in database
-      $bdd=new PDO($dbname, $user);
-      $req=$bdd->prepare('INSERT INTO insciption (nom,prenom,known,etablissement,email,telephone,ctf,git,gimp,interested) VALUES(?,?,?,?,?,?,?,?,?,?)');
+      $bdd=new PDO($dbname, $user, $pwd);
+      $req=$bdd->prepare(`INSERT INTO insciption (nom,prenom,known,etablissement,email,telephone,ctf,git,gimp,interested) VALUES(?,?,?,?,?,?,?,?,?,?)`);
       $arr[`nom`] = htmlspecialchars($_POST[`nom`]);
       $arr[`prenom`] = htmlspecialchars($_POST[`prenom`]);
       $arr[`known`] = htmlspecialchars($_POST[`known`]);

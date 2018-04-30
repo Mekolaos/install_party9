@@ -263,7 +263,12 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                     
                     <p class="text_desc" style="text-align: center;"> Pour une installation dans de bonnes conditions, sauvegardez vos fichiers importants et défragmentez votre disque dûr à l'avance. Bonne installation !</p>
 </section>
+<<<<<<< HEAD
     
+=======
+
+
+>>>>>>> c1ab8e7ec6654c6073f7fc90c0f9301506dd7063
 
     <!--=====================================================-->
     <!--======================== Agenda =====================-->
@@ -333,12 +338,7 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
   <input type="submit" value="Télécharger le dossier de sponsoring"  class="register-button" style="width: 50%" >
 </form>
                     
-                    <!-- **** -->
-                    <!-- Line 2 -->
                     
-                        
-                    
-                    <!-- *************** -->
                 </div>
             </div>
         </div>

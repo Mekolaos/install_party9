@@ -14,7 +14,7 @@ session_start();
                    <!-- == U2HDr2QgWmlhbmkgZXQgWWFuaXMgS2hlbG91ZmkK ==-->
                  
     <title>Install Party 9 | OpenMindsClub</title>
-    <link rel="icon" type="png" href="images/ip9.svg" />
+    <link rel="icon" type="png" href="images/ip9-logo.png" />
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -81,7 +81,7 @@ session_start();
         <div class="container" id="main_content" style="margin-top: 60px;">
             <div class="content_container row ip_home_content"  >
              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ip_main align-center home_anim2">
-                <img src="images/ip9-logo.svg" class="home_anim5 logo"/>  
+                <img src="images/ip9-logo.png" class="home_anim5 logo"/>  
              </div>
             </div>  
         </div>
@@ -137,12 +137,12 @@ session_start();
                 <div class="container">
             <div class="row">
                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 align-center features_anim5">
-                     <img id="osLogo" src="images/thebasics-logo.svg" style="height: 190px;" class="home_anim5 logo"/>
+                     <img id="osLogo" src="images/thebasics-logo.png" style="height: 190px;" class="home_anim5 logo"/>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 align-center features_anim6">
                      
                      <p class="text_desc">
-                        Pour cette neuvième edition de l'Install Party, l'idée de la thématique sera d'élargir le rayon de la communauté du Libre et de l'OpenSource, à travers une journée exclusivement &laquo; The Basics &raquo;.
+                        Pour cette neuvième edition de l'Install Party, l'idée de la thématique sera de revenir aux sources du Libre et de l'OpenSource, à travers une journée exclusivement &laquo; The Basics &raquo;.
                         Nos conférences, seront animées par des experts de la philosophie, et pour la première fois, serviront de guide pour les plus ambitieux, sur comment réussir son projet OpenSource et comment protéger ses droits sur son propre projet ?
                         Qu'est-ce qu'un projet OpenSource ? Existe-il des exemples qui ont pu réussir en faisant de leur projets, des projets communautaires ? Pourquoi un projet communautaire ? Comment contribuer à un projet OpenSource ? Sont des questions pour lesquelles Open Minds Club tient à apporter des réponses à travers une série de conférences, des ateliers applicatifs, et évidemment des installations du système d'exploitation Libre et OpenSource GNU/Linux; ainsi que le dernière version Ubuntu 18.04 en exclusivité lors de cette Install Party 9 !
 
@@ -266,10 +266,10 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                 </div>
                 <br/><br/>
                 <p class="text_desco" style="text-align: center;" > Installez Ubuntu 18.04 :</p>
-                    <!--<a href="images/ubuntux.jpg" data-lity="frank"> <img class="himage" src="images/Ubuntu.jpg"/></a> -->
+                    <a href="images/ubuntu.png" data-lity="frank"> <img src="images/ubuntu_presentation.jpg"/></a> 
                     
                     <p class="text_desc" style="text-align: center;"> Installez Manjaro :</p>
-                    <!-- <a href="images/manjarox.jpg" data-lity="frank"><img class="himage" src="images/Manjaro.jpg"/></a> -->
+                    <a href="images/manjaro.jpg" data-lity="frank"><img src="images/manjaro_presentation.jpg"/></a>
                     
                     <p class="text_desc" style="text-align: center;"> Pour une installation dans de bonnes conditions, sauvegardez vos fichiers importants et défragmentez votre disque dûr à l'avance. Bonne installation !</p>
 </section>
@@ -421,7 +421,7 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                     </div>
                     
                      <div id="mem2" onclick="myOrgFunction(2,3)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
-                        <img src="../images/ip8/organizers/yanis.png" width="100%" />
+                        <img src="images/lisa.png" width="100%" />
                     </div>
                     <div id="memDesc2" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
                        <p class="nameMem"> Lisa</p>
@@ -431,19 +431,19 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                     </div>
 
                     <div id="mem3" onclick="myOrgFunction(3,7)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
-                        <img src="../images/ip8/organizers/said.png" width="100%" />
+                        <img src="images/fella.png" width="100%" />
                     </div>
                     
                     
                     <div id="mem4" onclick="myOrgFunction(4,8)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
-                        <img src="../images/ip8/organizers/lisa.png" width="100%" />
+                        <img src="images/manel.png" width="100%" />
                     </div>
                     <!--***** -->
 
                     <!-- 2nd Line -->
 
                     <div id="mem5" onclick="myOrgFunction(5,6)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
-                        <img src="images/Redha-min.png" width="100%" />
+                        <img src="images/reda.png" width="100%" />
                     </div>
                     <div id="memDesc5" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
                        <p class="nameMem"> Redha</p>
@@ -453,19 +453,19 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                     </div>
 
                     <div id="mem6" onclick="myOrgFunction(6,7)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
-                        <img src="../images/ip8/organizers/ouidad.png" width="100%" />
+                        <img src="images/boudjemaa.jpg" width="100%" />
                     </div>
                     <div id="memDesc6" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
+                       <p class="nameMem"> Boudjemaa</p>
+                       <p class="nameMem1"> Chikhaoui</p>
+                       <p class="postMem2">Web designer</p>
+                    </div>
+
+                    <div id="memDesc3" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
                        <p class="nameMem"> Fella</p>
                        <p class="nameMem1"> Lazouni</p>
                        <p class="postMem">Chef d’équipe</p>
                        <p class="equipeMem">réception</p>
-                    </div>
-
-                    <div id="memDesc3" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
-                       <p class="nameMem"> Merouane</p>
-                       <p class="nameMem1"> Houmel</p>
-                       <p class="postMem2">Webmaster</p>
                     </div>
                     <div id="memDesc8" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
                        <p class="nameMem"> Sofiane</p>
@@ -474,7 +474,7 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                        <p class="equipeMem">logistique</p>
                     </div>
                     <div id="mem7" onclick="myOrgFunction(7,8)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
-                        <img src="images/Salim-min.png" width="100%" />
+                        <img src="images/salim.png" width="100%" />
                     </div>
                     <div id="memDesc7" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
                        <p class="nameMem"> Salim</p>
@@ -491,7 +491,7 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                        <p class="equipeMem">workshops</p>
                     </div>
                     <div id="mem8" onclick="myOrgFunction(8,7)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
-                        <img src="../images/ip8/organizers/sofiane.png" width="100%" />
+                        <img src="images/sofiane.png" width="100%" />
                     </div>
                     <div id="mem9" onclick="myOrgFunction(9,10)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
                         <img src="images/Yacin-min.png" width="100%" />
@@ -503,14 +503,14 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                        <p class="equipeMem"> team design</p>
                     </div>
                     <div id="mem10" onclick="myOrgFunction(10,11)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
-                        <img src="images/Mahfoud-min.png" width="100%" />
+                        <img src="images/mahfoud.png" width="100%" />
                     </div>
                     <div id="memDesc10"  class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
                        <p class="nameMem"> Mahfoud</p>
                        <p class="nameMem1"> Merzoug</p>
                        <p class="postMem">Chargé des speakers</p>
                     </div>
-                    <div id="mem11" onclick="myOrgFunction(11,10)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                    <div id="mem11" onclick="myOrgFunction(11,12)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
                         <img src="images/Rayon-min.png" width="100%" />
                     </div>
                     <div id="memDesc11"  class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
@@ -518,6 +518,15 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                        <p class="nameMem1"> Bourkaïb</p>
                        <p class="postMem">Chef de la</p>
                        <p class="equipeMem"> team stand</p>
+                    </div>
+                    <div id="mem12" onclick="myOrgFunction(12,11)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                        <img src="images/nadjib.png" width="100%" />
+                    </div>
+                    <div id="memDesc12"  class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">
+                       <p class="nameMem"> Nadjib</p>
+                       <p class="nameMem1"> Brahim-Djelloul</p>
+                       <p class="postMem">Chef de la</p>
+                       <p class="equipeMem"> team audiovisuelle</p>
                     </div>
                     <!--***** -->
                   

@@ -17,7 +17,7 @@
 src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 <link rel="icon"
-	 href="../images/logo.png"/>
+	 href="../images/ip9.svg"/>
 
 
 <script>

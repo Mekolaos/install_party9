@@ -188,7 +188,7 @@ if(isset($_POST)){
       $arr[`prenom`] = htmlspecialchars($_POST[`prenom`]);
       $arr[`known`] = htmlspecialchars($_POST[`known`]);
       $arr[`etablissement`] = htmlspecialchars($_POST[`etablissement`]);
-      $arr[`email] = htmlspecialchars($_POST[`email`]);
+      $arr[`email`] = htmlspecialchars($_POST[`email`]);
       $arr[`telephone`] = htmlspecialchars($_POST[`telephone`]);
       $arr[`ctf`] = htmlspecialchars($_POST[`ctf`]);
       $arr[`git`] = htmlspecialchars($_POST[`git`]);

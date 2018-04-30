@@ -194,7 +194,7 @@ if(isset($_POST)){
       $arr[`git`] = htmlspecialchars($_POST[`git`]);
       $arr[`gimp`] = htmlspecialchars($_POST[`gimp`]);
       $arr[`interested`] = htmlspecialchars($_POST[`interested`]);
-      $res = $req->execute(array($arr[`nom`],$arr[`prenom`],$arr[`known`],$arr[`email`],$arr[`telephone`],$arr[`ctf`],$arr[`git`],$arr[`gimp`],$arr[`interested`]));
+      $res = $req->execute(array($arr[`nom`],$arr[`prenom`],$arr[`known`],$arr[`etablissement`],$arr[`email`],$arr[`telephone`],$arr[`ctf`],$arr[`git`],$arr[`gimp`],$arr[`interested`]));
       //Success popup
       echo
         '<div id="overlay">

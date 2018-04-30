@@ -184,17 +184,17 @@ if(isset($_POST)){
       // Enter in database
       $bdd=new PDO($dbname, $user);
       $req=$bdd->prepare('INSERT INTO insciption (nom,prenom,known,etablissement,email,telephone,ctf,git,gimp,interested) VALUES(?,?,?,?,?,?,?,?,?,?)');
-      $arr['nom'] = htmlspecialchars($_POST['nom']);
-      $arr['prenom'] = htmlspecialchars($_POST['prenom']);
-      $arr['known'] = htmlspecialchars($_POST['known']);
-      $arr['etablissement'] = htmlspecialchars($_POST['etablissement']);
-      $arr['email'] = htmlspecialchars($_POST['email']);
-      $arr['telephone'] = htmlspecialchars($_POST['telephone']);
-      $arr['ctf'] = htmlspecialchars($_POST['ctf']);
-      $arr['git'] = htmlspecialchars($_POST['git']);
-      $arr['gimp'] = htmlspecialchars($_POST['gimp']);
-      $arr['interested'] = htmlspecialchars($_POST['interested']);
-      $res = $req->execute(array($arr['nom'],$arr['prenom'],$arr['known'],$arr['email'],$arr['telephone'],$arr['ctf'],$arr['git'],$arr['gimp'],$arr['interested']));
+      $arr[`nom`] = htmlspecialchars($_POST[`nom`]);
+      $arr[`prenom`] = htmlspecialchars($_POST[`prenom`]);
+      $arr[`known`] = htmlspecialchars($_POST[`known`]);
+      $arr[`etablissement`] = htmlspecialchars($_POST[`etablissement`]);
+      $arr[`email] = htmlspecialchars($_POST[`email`]);
+      $arr[`telephone] = htmlspecialchars($_POST[`telephone`]);
+      $arr[`ctf`] = htmlspecialchars($_POST[`ctf`]);
+      $arr[`git`] = htmlspecialchars($_POST[`git`]);
+      $arr[`gimp`] = htmlspecialchars($_POST[`gimp`]);
+      $arr[`interested`] = htmlspecialchars($_POST[`interested`]);
+      $res = $req->execute(array($arr[`nom`],$arr[`prenom`],$arr[`known`],$arr[`email`],$arr[`telephone`],$arr[`ctf`],$arr[`git`],$arr[`gimp`],$arr[`interested`]));
       //Success popup
       echo
         '<div id="overlay">

@@ -93,7 +93,7 @@ class="register-switch-input" checked>
 	<p> Motivation</p>
 		<input required name="interested" type="text" id="interested" class="register-input" placeholder="Je suis interessé(e) parce que .."><br/><br/>
   <br/><br/>
-	<div class="g-recaptcha" data-sitekey="6LcqeToUAAAAAA82Chdbv0rqv51UDyVfVHEf12Q8"></div>
+	<div class="g-recaptcha" data-sitekey="<?php echo $api_secret?>"></div>
 	<input type="submit" name="submit" value="Inscription" class="register-button" >
   </form>
 

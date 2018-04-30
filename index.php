@@ -21,7 +21,6 @@ session_start();
 
     <meta name="keywords" content="install party, openmindsclub, opensource, libre, free, usthb, GNU/Linux, openscience, contribution, ce qui ne se partage pas se perd, agence universitaire de la francophonie- algérie, centre des ressources informatiques- usthb"> 
     <meta name="description" content="Du terme anglais traduit littéralement par «fête d'installation», l'Install Party est l’événement phare du club OpenMinds et est organisé chaque année depuis sa création. Ce dernier permet de faire rencontrer des utilisateurs expérimentés des systèmes basés sur des logiciels libres (tels que GNU/Linux) et les novices. A cet effet, sont organisés durant toute une journée des cycles de talks grand public, des workshops, une tombola, des concours et moult autres activités autour de la philosophie Libre/Open Source."/>
-    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="lightbox/lity.css" rel="stylesheet">

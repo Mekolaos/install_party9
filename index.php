@@ -531,7 +531,7 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
 
 <script src="ip_js/jquery-3.3.1.js"></script>
 <script src="ip_js/bootstrap.min.js"></script>
-<script src="ip_js/jquery.min.js"></script>
+<script src="lightbox/jquery.min.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
 <script src="lightbox/lity.min.js"></script>
 <script src="lightbox/jquery.js"></script>

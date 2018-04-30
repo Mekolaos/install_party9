@@ -189,7 +189,7 @@ if(isset($_POST)){
       $arr[`known`] = htmlspecialchars($_POST[`known`]);
       $arr[`etablissement`] = htmlspecialchars($_POST[`etablissement`]);
       $arr[`email] = htmlspecialchars($_POST[`email`]);
-      $arr[`telephone] = htmlspecialchars($_POST[`telephone`]);
+      $arr[`telephone`] = htmlspecialchars($_POST[`telephone`]);
       $arr[`ctf`] = htmlspecialchars($_POST[`ctf`]);
       $arr[`git`] = htmlspecialchars($_POST[`git`]);
       $arr[`gimp`] = htmlspecialchars($_POST[`gimp`]);

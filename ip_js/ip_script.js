@@ -1,11 +1,8 @@
 /*************** Install party *****************/
 /********* Count Down *************/
 // Set the date we're counting down to
-<<<<<<< HEAD
 var countDownDate = new Date("May 5, 2018 8:00:01").getTime();
-=======
 var countDownDate = new Date("May 5, 2018 9:30:01").getTime();
->>>>>>> c1ab8e7ec6654c6073f7fc90c0f9301506dd7063
 
 // Update the count down every 1 second
 var x = setInterval(function() {

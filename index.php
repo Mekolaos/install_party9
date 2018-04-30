@@ -519,7 +519,7 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                        <p class="postMem">Chef de la</p>
                        <p class="equipeMem"> team stand</p>
                     </div>
-                    <div id="mem12" onclick="myOrgFunction(12,11)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
+                    <div id="mem12" onclick="myOrgFunction(12,10)" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg">
                         <img src="images/nadjib.png" width="100%" />
                     </div>
                     <div id="memDesc12"  class="col-xs-3 col-sm-3 col-md-3 col-lg-3 align-center screenshots_anim3 vignOrg divMem">

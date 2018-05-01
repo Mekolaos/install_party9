@@ -272,8 +272,7 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-lg-10 col-md-offset-2 col-lg-offset-1 align-center features_anim3">
                     <h4 class="section_titles" style="color: #364e88"> Programme</h4>
-                     <h4 id="ip_soon">En cours...</h4>
-                    <!--  <img src="images/programme.png" id="prgm" /-->
+                    <img src="images/programme.jpg" id="prgm" />
                 </div>
             </div>
         </div>

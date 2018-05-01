@@ -84,7 +84,7 @@ class="register-switch-input" checked>
 	<div id="put">
 	<p> Quel activité vous intéresse ?</p><br/>
 
-	 <input type="checkbox" name="ctf" value="ctf"> Capture The Flag. <br>
+	 <input type="checkbox" name="ctf" value="ctf"> Investigation Numérique. <br>
 	 <input type="checkbox" name="git" value="git"> Git<br>
 	 <input type="checkbox" name="gimp" value="gimp"> GIMP/Inkscape<br>
 </div>

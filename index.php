@@ -1,6 +1,5 @@
 <?php
 include('config.php');
-include('mail/mail.php'); // Here we include the config file
 
 session_start();
  ?>
@@ -11,7 +10,6 @@ session_start();
                 <!--=====================================================-->
                 <!--============ With <3 By Humans Of OMC ===============-->
                  <!--===================== 2018 ========================-->
-                   <!-- == U2HDr2QgWmlhbmkgZXQgWWFuaXMgS2hlbG91ZmkK ==-->
                  
     <title>Install Party 9 | OpenMindsClub</title>
     <link rel="icon" type="png" href="images/ip9-logo.png" />
@@ -66,9 +64,9 @@ if(isset($_POST) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_P
       $arr['etablissement'] = isset($_POST['etablissement']) ? htmlspecialchars($_POST['etablissement']) : '';
       $arr['email'] = htmlspecialchars($_POST['email']);
       $arr['telephone'] = htmlspecialchars($_POST['telephone']);
-      $arr['ctf'] = isset($_POST['ctf']) ? htmlspecialchars($_POST['ctf']) : 'No';
-      $arr['git'] = isset($_POST['git']) ? htmlspecialchars($_POST['git']) : 'No';
-      $arr['gimp'] = isset($_POST['gimp']) ? htmlspecialchars($_POST['gimp']) : 'No';
+      $arr['ctf'] = isset($_POST['ctf']) ? 'Yes' : 'No';
+      $arr['git'] = isset($_POST['git']) ? 'Yes' : 'No';
+      $arr['gimp'] = isset($_POST['gimp']) ? 'Yes' : 'No';
       $arr['interested'] = isset($_POST['interested']) ? htmlspecialchars($_POST['interested']) : '';
       $res = $req->execute(array($arr['nom'],$arr['prenom'],$arr['known'],$arr['etablissement'],$arr['email'],$arr['telephone'],$arr['ctf'],$arr['git'],$arr['gimp'],$arr['interested']));
       //Success popup
@@ -81,7 +79,6 @@ if(isset($_POST) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_P
         '</div>'.
         '   </div>
         </div>';
-        sendEmail($email,$prenom);
     }else{
       $_SESSION['error'] = 'Email invalide.';
       header('Location: http://in.stall.party/ip9/registration');

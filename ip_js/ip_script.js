@@ -59,7 +59,6 @@ var x = setInterval(function() {
   document.getElementById("hour").innerHTML = hours ;
   document.getElementById("hourWord").innerHTML = hoursWord ;
   document.getElementById("min").innerHTML = minutes;
-  document.getElementById("minWord").innerHTML = minsWord ;
   
 
   // If the count down is finished, write some text 
@@ -140,96 +139,84 @@ $("#is_open_ip").on("change", function(){
   }
     
 
-    document.querySelector("#plus1").onclick = function() {
-        if (window.getComputedStyle(document.querySelector('#ipDesc')).display=='none'){
-            document.querySelector("#ipDesc").style.display="block";
-            document.querySelector("#ip7_team").style.display="none";
-            document.querySelector("#descrIP").style.display="none";
-        }
-        else{
-            document.querySelector("#ipDesc").style.display="none";
-            document.querySelector("#ip7_team").style.display="block";
-        } 
-    }
+    // document.querySelector("#reg_ws").onclick = function() {
+    //   if (window.getComputedStyle(document.querySelector('#descrIP')).display=='none'){
+    //         document.querySelector("#descIPDay").style.background="#fff";
+    //         document.querySelector("#descrIP").style.display="block";
+    //         document.querySelector("#dayIP").style.background="#f4f8f7";
+    //         document.querySelector("#dayIP").style.opacity="0.1";
+    //   }
+    //   else{
+    //        document.querySelector("#descIPDay").style.background="#f4f8f7";
+    //        document.querySelector("#descIPDay").style.opacity="0.1";
+    //        document.querySelector("#descrIP").style.display="none";
+    //        document.querySelector("#dayIP").style.background="#fff";
+    //   } 
+    // }
 
-    document.querySelector("#reg_ws").onclick = function() {
-      if (window.getComputedStyle(document.querySelector('#descrIP')).display=='none'){
-            document.querySelector("#descIPDay").style.background="#fff";
-            document.querySelector("#descrIP").style.display="block";
-            document.querySelector("#dayIP").style.background="#f4f8f7";
-            document.querySelector("#dayIP").style.opacity="0.1";
-      }
-      else{
-           document.querySelector("#descIPDay").style.background="#f4f8f7";
-           document.querySelector("#descIPDay").style.opacity="0.1";
-           document.querySelector("#descrIP").style.display="none";
-           document.querySelector("#dayIP").style.background="#fff";
-      } 
-    }
+    // document.querySelector("#plus3").onclick = function() {
+    //     if (window.getComputedStyle(document.querySelector('#wsIPBiss')).display=='none'){
+    //         document.querySelector("#ip7_work").style.display="none";
+    //         document.querySelector("#ip7_workBiss").style.display="block";
+    //         document.querySelector("#wsIP").style.display="none";
+    //         document.querySelector("#wsIPBiss").style.display="block";
+    //     }
+    // }
 
-    document.querySelector("#plus3").onclick = function() {
-        if (window.getComputedStyle(document.querySelector('#wsIPBiss')).display=='none'){
-            document.querySelector("#ip7_work").style.display="none";
-            document.querySelector("#ip7_workBiss").style.display="block";
-            document.querySelector("#wsIP").style.display="none";
-            document.querySelector("#wsIPBiss").style.display="block";
-        }
-    }
+    // document.querySelector("#plus3b").onclick = function() {
+    //     if (window.getComputedStyle(document.querySelector('#wsIPBiss')).display=='block'){
+    //         document.querySelector("#ip7_workBiss").style.display="none";
+    //         document.querySelector("#ip7_work").style.display="block";
+    //         document.querySelector("#wsIPBiss").style.display="none";
+    //         document.querySelector("#wsIP").style.display="block";
+    //         document.querySelector("#signWs").style.display="none";
+    //         for(var j=1;j<=7;j++) {
+    //                 document.querySelector("#workPic"+j).style.display="none";
+    //                 document.querySelector("#work"+j).style.display="none";
+    //                 document.querySelector("#ws"+j+" li").style.color="#888989";
+    //         } 
+    //     }
+    // }
 
-    document.querySelector("#plus3b").onclick = function() {
-        if (window.getComputedStyle(document.querySelector('#wsIPBiss')).display=='block'){
-            document.querySelector("#ip7_workBiss").style.display="none";
-            document.querySelector("#ip7_work").style.display="block";
-            document.querySelector("#wsIPBiss").style.display="none";
-            document.querySelector("#wsIP").style.display="block";
-            document.querySelector("#signWs").style.display="none";
-            for(var j=1;j<=7;j++) {
-                    document.querySelector("#workPic"+j).style.display="none";
-                    document.querySelector("#work"+j).style.display="none";
-                    document.querySelector("#ws"+j+" li").style.color="#888989";
-            } 
-        }
-    }
-
-    document.querySelector("#plus4").onclick = function() {
-      if (window.getComputedStyle(document.querySelector('#speakersIP')).display=='none'){
-            document.querySelector("#speakIP").style.display="none";
-            document.querySelector("#talksIP").style.display="none";
-            document.querySelector("#speakerNass").style.display="none";
-            document.querySelector("#speakersIP").style.display="block";
-            document.querySelector("#talksIP").style.display="block";
+    // document.querySelector("#plus4").onclick = function() {
+    //   if (window.getComputedStyle(document.querySelector('#speakersIP')).display=='none'){
+    //         document.querySelector("#speakIP").style.display="none";
+    //         document.querySelector("#talksIP").style.display="none";
+    //         document.querySelector("#speakerNass").style.display="none";
+    //         document.querySelector("#speakersIP").style.display="block";
+    //         document.querySelector("#talksIP").style.display="block";
             
-      }
-      else{
-            document.querySelector("#speakersIP").style.display="none";
-            document.querySelector("#speakIP").style.display="block";
-            document.querySelector("#talksIP").style.display="block";
-            document.querySelector("#speakerNass").style.display="block";
-            for(var j=1;j<=6;j++) {
+    //   }
+    //   else{
+    //         document.querySelector("#speakersIP").style.display="none";
+    //         document.querySelector("#speakIP").style.display="block";
+    //         document.querySelector("#talksIP").style.display="block";
+    //         document.querySelector("#speakerNass").style.display="block";
+    //         for(var j=1;j<=6;j++) {
                 
-                    document.querySelector("#speak"+j).style.display="none";
-                    document.querySelector("#speakPic"+j).style.display="none";
-                    document.querySelector("#speaker"+j+" li").style.color="#888989";
+    //                 document.querySelector("#speak"+j).style.display="none";
+    //                 document.querySelector("#speakPic"+j).style.display="none";
+    //                 document.querySelector("#speaker"+j+" li").style.color="#888989";
                 
-            }  
-      } 
-    }
+    //         }  
+    //   } 
+    // }
 
-    document.querySelector("#plus5").onclick = function() {
-      if (window.getComputedStyle(document.querySelector('#aboutSpIP')).display=='none'){
-            document.querySelector("#nospIP").style.display="none";
-            document.querySelector("#stickIP").style.display="none";
-            document.querySelector("#aboutSpIP").style.display="block";
-            document.querySelector("#whySpIP").style.background="#f4f8f7";
-            document.querySelector("#whySpIP").style.opacity="0.1";   
-      }
-      else{ 
-            document.querySelector("#aboutSpIP").style.display="none";
-            document.querySelector("#whySpIP").style.background="#FFF";
-            document.querySelector("#nospIP").style.display="block";
-            document.querySelector("#stickIP").style.display="block";
-      } 
-    }
+    // document.querySelector("#plus5").onclick = function() {
+    //   if (window.getComputedStyle(document.querySelector('#aboutSpIP')).display=='none'){
+    //         document.querySelector("#nospIP").style.display="none";
+    //         document.querySelector("#stickIP").style.display="none";
+    //         document.querySelector("#aboutSpIP").style.display="block";
+    //         document.querySelector("#whySpIP").style.background="#f4f8f7";
+    //         document.querySelector("#whySpIP").style.opacity="0.1";   
+    //   }
+    //   else{ 
+    //         document.querySelector("#aboutSpIP").style.display="none";
+    //         document.querySelector("#whySpIP").style.background="#FFF";
+    //         document.querySelector("#nospIP").style.display="block";
+    //         document.querySelector("#stickIP").style.display="block";
+    //   } 
+    // }
 
     /*document.querySelector("#plus6").onclick = function() {
       if (window.getComputedStyle(document.querySelector('#signIP')).display=='none'){
@@ -241,18 +228,18 @@ $("#is_open_ip").on("change", function(){
       } 
     }*/
 
-    document.querySelector("#plus7").onclick = function() {
-        if (window.getComputedStyle(document.querySelector('#descIPBG')).display=='none'){
-            document.querySelector("#descIPBG").style.display="block";
-            document.querySelector("#bgPic").style.display="none";
-            document.querySelector("#bgEmpIP").style.display="none";
-        }
-        else{
-            document.querySelector("#descIPBG").style.display="none";
-            document.querySelector("#bgPic").style.display="block";
-            document.querySelector("#bgEmpIP").style.display="block";
-        } 
-    }
+    // document.querySelector("#plus7").onclick = function() {
+    //     if (window.getComputedStyle(document.querySelector('#descIPBG')).display=='none'){
+    //         document.querySelector("#descIPBG").style.display="block";
+    //         document.querySelector("#bgPic").style.display="none";
+    //         document.querySelector("#bgEmpIP").style.display="none";
+    //     }
+    //     else{
+    //         document.querySelector("#descIPBG").style.display="none";
+    //         document.querySelector("#bgPic").style.display="block";
+    //         document.querySelector("#bgEmpIP").style.display="block";
+    //     } 
+    // }
 
 
 
@@ -310,8 +297,10 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+//   slides[slideIndex-1].style.display = "block";
+//   if(dots[slideIndex-1]) {
+    dots[slideIndex-1].className += " active";
+//   }
 } 
 
 /* summ'in summ'in */
@@ -331,20 +320,20 @@ function showSlides(n) {
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+// var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+// btn.onclick = function() {
+//     modal.style.display = "block";
+// }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+// span.onclick = function() {
+//     modal.style.display = "none";
+// }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {

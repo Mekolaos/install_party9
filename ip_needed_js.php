@@ -7,5 +7,5 @@
 <script src="js/main.js?v=1.3"></script>
 <script src="js/script.js"></script>
 <script src="js/sc.js?v=3.0"></script>
-<script src="ip_js/ip_script.js?v=3.0"></script>
+<script src="ip_js/ip_script.js?v=3.1"></script>
 <script src="lightbox/lity.min.js"></script>

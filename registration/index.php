@@ -81,7 +81,7 @@ class="register-switch-input" checked>
 	<br/>
 
 	<br/><br/>
-	<div id="pute">
+	<div id="put">
 	<p> Quel activité vous intéresse ?</p><br/>
 
 	 <input type="checkbox" name="ctf" value="ctf"> Capture The Flag. <br>

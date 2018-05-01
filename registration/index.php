@@ -68,7 +68,7 @@ class="register-switch-input" checked>
 	<div id="kakashi">
 	<p> Établissement d'étude : </p><br/>
 
-	<input required type="text" class="register-input" placeholder="Établissement" name="etablissement" >
+	<input type="text" class="register-input" placeholder="Établissement" name="etablissement" >
 
 	</div>
 <br/>

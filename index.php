@@ -30,7 +30,7 @@ session_start();
   </head>
   
   <body>
-                    <?php
+<?php
 if(isset($_POST) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['known']) && isset($_POST['email']) && isset($_POST['telephone'])){
   $response = $_POST["g-recaptcha-response"];
   $url = 'https://www.google.com/recaptcha/api/siteverify';
@@ -55,25 +55,21 @@ if(isset($_POST) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_P
     if(filter_var($email, FILTER_VALIDATE_EMAIL)){
       // Send an email
       $prenom = $_POST['prenom'];
-      sendEmail($email,$prenom);
       // Enter in database
       $bdd=new PDO($dbname, $user, $pwd);
       $req=$bdd->prepare('INSERT INTO ip9 (nom,prenom,known,etablissement,email,telephone,ctf,git,gimp,interested) VALUES(?,?,?,?,?,?,?,?,?,?)');
-      $arr['ctf'] = 'No'; 
-      $arr['git'] = 'No';
-      $arr['gimp'] = 'No';
       $arr['interested'] = '?';
       $arr['etablissement'] = '?';
       $arr['nom'] = htmlspecialchars($_POST['nom']);
       $arr['prenom'] = htmlspecialchars($_POST['prenom']);
       $arr['known'] = htmlspecialchars($_POST['known']);
-      $arr['etablissement'] = htmlspecialchars($_POST['etablissement']);
+      $arr['etablissement'] = isset($_POST['etablissement']) ? htmlspecialchars($_POST['etablissement']) : '';
       $arr['email'] = htmlspecialchars($_POST['email']);
       $arr['telephone'] = htmlspecialchars($_POST['telephone']);
-      $arr['ctf'] = htmlspecialchars($_POST['ctf']);
-      $arr['git'] = htmlspecialchars($_POST['git']);
-      $arr['gimp'] = htmlspecialchars($_POST['gimp']);
-      $arr['interested'] = htmlspecialchars($_POST['interested']);
+      $arr['ctf'] = isset($_POST['ctf']) ? htmlspecialchars($_POST['ctf']) : 'No';
+      $arr['git'] = isset($_POST['git']) ? htmlspecialchars($_POST['git']) : 'No';
+      $arr['gimp'] = isset($_POST['gimp']) ? htmlspecialchars($_POST['gimp']) : 'No';
+      $arr['interested'] = isset($_POST['interested']) ? htmlspecialchars($_POST['interested']) : '';
       $res = $req->execute(array($arr['nom'],$arr['prenom'],$arr['known'],$arr['etablissement'],$arr['email'],$arr['telephone'],$arr['ctf'],$arr['git'],$arr['gimp'],$arr['interested']));
       //Success popup
       echo
@@ -85,13 +81,14 @@ if(isset($_POST) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_P
         '</div>'.
         '   </div>
         </div>';
+        sendEmail($email,$prenom);
     }else{
       $_SESSION['error'] = 'Email invalide.';
       header('Location: http://in.stall.party/ip9/registration');
     }
   }
 }
- ?>
+?>
     <!--=====================================================-->
     <!--==================== Preloader ======================-->
     <!--=====================================================-->

@@ -56,7 +56,7 @@ window.onload=function(){
 	<br/>
 	<p> Êtes vous un étudiant ? </p>
 	<br/><div class="register-switch">
-	<input type="radio" name="known" value=1 id="knownyes"
+	<input type="radio" name="known" value=0 id="knownyes"
 class="register-switch-input" >
 		<label for="knownyes" class="register-switch-label">Oui</label>
 	<input type="radio" name="known" value=0 id="knownno"

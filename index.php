@@ -174,7 +174,7 @@ if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['known']) && 
   $captcha_success=json_decode($verify);
   if ($captcha_success->success==false) {
     $_SESSION['error'] = 'Captcha invalide.';
-    header('Location: http://openmindsclub.net/ip9/registration');
+    header('Location: http://in.stall.party/ip9/registration');
   } else if ($captcha_success->success==true) {
     $email = $_POST['email'];
     if(filter_var($email, FILTER_VALIDATE_EMAIL)){
@@ -212,7 +212,7 @@ if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['known']) && 
         </div>';
     }else{
       $_SESSION['error'] = 'Email invalide.';
-      header('Location: http://openmindsclub.net/ip9/registration');
+      header('Location: http://in.stall.party/ip9/registration');
     }
   }
 }

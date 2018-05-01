@@ -1,6 +1,5 @@
 <?php
 include('config.php');
-include('mail/mail.php'); // Here we include the config file
 
 session_start();
  ?>
@@ -11,7 +10,6 @@ session_start();
                 <!--=====================================================-->
                 <!--============ With <3 By Humans Of OMC ===============-->
                  <!--===================== 2018 ========================-->
-                   <!-- == U2HDr2QgWmlhbmkgZXQgWWFuaXMgS2hlbG91ZmkK ==-->
                  
     <title>Install Party 9 | OpenMindsClub</title>
     <link rel="icon" type="png" href="images/ip9-logo.png" />
@@ -30,6 +28,64 @@ session_start();
   </head>
   
   <body>
+<?php
+if(isset($_POST) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['known']) && isset($_POST['email']) && isset($_POST['telephone'])){
+  $response = $_POST["g-recaptcha-response"];
+  $url = 'https://www.google.com/recaptcha/api/siteverify';
+  $data = array(
+    'secret' => $api_secret,
+    'response' => $_POST["g-recaptcha-response"]
+  );
+  $options = array(
+    'http' => array (
+      'method' => 'POST',
+      'content' => http_build_query($data)
+    )
+  );
+  $context = stream_context_create($options);
+  $verify = file_get_contents($url, false, $context);
+  $captcha_success = json_decode($verify);
+  if ($captcha_success->success==false) {
+    $_SESSION['error'] = 'Captcha invalide.';
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+  } else if ($captcha_success->success==true) {
+    $email = $_POST['email'];
+    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+      // Send an email
+      $prenom = $_POST['prenom'];
+      // Enter in database
+      $bdd=new PDO($dbname, $user, $pwd);
+      $req=$bdd->prepare('INSERT INTO ip9 (nom,prenom,known,etablissement,email,telephone,ctf,git,gimp,interested) VALUES(?,?,?,?,?,?,?,?,?,?)');
+      $arr['interested'] = '?';
+      $arr['etablissement'] = '?';
+      $arr['nom'] = htmlspecialchars($_POST['nom']);
+      $arr['prenom'] = htmlspecialchars($_POST['prenom']);
+      $arr['known'] = htmlspecialchars($_POST['known']);
+      $arr['etablissement'] = isset($_POST['etablissement']) ? htmlspecialchars($_POST['etablissement']) : '';
+      $arr['email'] = htmlspecialchars($_POST['email']);
+      $arr['telephone'] = htmlspecialchars($_POST['telephone']);
+      $arr['ctf'] = isset($_POST['ctf']) ? 'Yes' : 'No';
+      $arr['git'] = isset($_POST['git']) ? 'Yes' : 'No';
+      $arr['gimp'] = isset($_POST['gimp']) ? 'Yes' : 'No';
+      $arr['interested'] = isset($_POST['interested']) ? htmlspecialchars($_POST['interested']) : '';
+      $res = $req->execute(array($arr['nom'],$arr['prenom'],$arr['known'],$arr['etablissement'],$arr['email'],$arr['telephone'],$arr['ctf'],$arr['git'],$arr['gimp'],$arr['interested']));
+      //Success popup
+      echo
+        '<div id="overlay">
+        <div class="msg success">'.
+        '<div class="msg_inner success_inner">'.
+        '<h2>Votre inscription a été réussie !</h2>'.
+        '<p> Veuillez vérifier votre e-mail pour plus d\'informations.</p>'.
+        '</div>'.
+        '   </div>
+        </div>';
+    }else{
+      $_SESSION['error'] = 'Email invalide.';
+      header('Location: http://in.stall.party/ip9/registration');
+    }
+  }
+}
+?>
     <!--=====================================================-->
     <!--==================== Preloader ======================-->
     <!--=====================================================-->
@@ -155,68 +211,6 @@ session_start();
 </form>
 
                     <!--***** !-->
-                    <?php
-if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['known']) && isset($_POST['email']) && isset($_POST['telephone']) && isset($_POST)){
-  $response = $_POST["g-recaptcha-response"];
-  $url = 'https://www.google.com/recaptcha/api/siteverify';
-  $data = array(
-    'secret' => $api_secret,
-    'response' => $_POST["g-recaptcha-response"]
-  );
-  $options = array(
-    'http' => array (
-      'method' => 'POST',
-      'content' => http_build_query($data)
-    )
-  );
-  $context = stream_context_create($options);
-  $verify = file_get_contents($url, false, $context);
-  $captcha_success=json_decode($verify);
-  if ($captcha_success->success==false) {
-    $_SESSION['error'] = 'Captcha invalide.';
-    header('Location: http://in.stall.party/ip9/registration');
-  } else if ($captcha_success->success==true) {
-    $email = $_POST['email'];
-    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-      // Send an email
-      $prenom = $_POST['prenom'];
-      sendEmail($email,$prenom);
-      // Enter in database
-      $bdd=new PDO($dbname, $user, $pwd);
-      $req=$bdd->prepare('INSERT INTO ip9 (nom,prenom,known,etablissement,email,telephone,ctf,git,gimp,interested) VALUES(?,?,?,?,?,?,?,?,?,?)');
-      $arr['ctf'] = 'No'; 
-      $arr['git'] = 'No';
-      $arr['gimp'] = 'No';
-      $arr['interested'] = '?';
-      $arr['etablissement'] = '?';
-      $arr['nom'] = htmlspecialchars($_POST['nom']);
-      $arr['prenom'] = htmlspecialchars($_POST['prenom']);
-      $arr['known'] = htmlspecialchars($_POST['known']);
-      $arr['etablissement'] = htmlspecialchars($_POST['etablissement']);
-      $arr['email'] = htmlspecialchars($_POST['email']);
-      $arr['telephone'] = htmlspecialchars($_POST['telephone']);
-      $arr['ctf'] = htmlspecialchars($_POST['ctf']);
-      $arr['git'] = htmlspecialchars($_POST['git']);
-      $arr['gimp'] = htmlspecialchars($_POST['gimp']);
-      $arr['interested'] = htmlspecialchars($_POST['interested']);
-      $res = $req->execute(array($arr['nom'],$arr['prenom'],$arr['known'],$arr['etablissement'],$arr['email'],$arr['telephone'],$arr['ctf'],$arr['git'],$arr['gimp'],$arr['interested']));
-      //Success popup
-      echo
-        '<div id="overlay">
-        <div class="msg success">'.
-        '<div class="msg_inner success_inner">'.
-        '<h2>Votre inscription a été réussie !</h2>'.
-        '<p> Veuillez vérifier votre e-mail pour plus d\'informations.</p>'.
-        '</div>'.
-        '   </div>
-        </div>';
-    }else{
-      $_SESSION['error'] = 'Email invalide.';
-      header('Location: http://in.stall.party/ip9/registration');
-    }
-  }
-}
- ?>
  <script>window.onload = function (){saske=document.getElementById("overlay");
 setTimeout(function(){ saske.style.display="none";}, 5000);};
 </script>
@@ -228,7 +222,7 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                 <br/><br/>
               <div id="owl-demo" class="owl-carousel owl-theme" style="width: 300px">
 
-                 <div class="item lsb-preview"><p class="text_desco">(...glissez vers la gauche.)</p></div>
+                 
                 <div class="item"><a href="images/NLP_descriptions.jpg" data-lity="gal"><img src="images/nlp.png" class="himage" /> <div class="middle"><div class="kakashi"><a href="images/NLP_descriptions.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
                 <div class="item""><a href="images/sage_descriptions.jpg" data-lity="gal"><img src="images/sagem.png" class="himage" height="200px" width="300px" /><div class="middle"><div class="kakashi"><a href="images/sage_descriptions.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
                 <div class="item lsb-preview"><a href="images/open_stack_descriptions.jpg" data-lity="gal"><img src="images/openstack.png" class="himage" height="200px" width="300px" /><div class="middle"><div class="kakashi"><a href="images/open_stack_descriptions.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>

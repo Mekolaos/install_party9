@@ -51,8 +51,8 @@ window.onload=function(){
 			unset($_SESSION['error']);
 		}
 	?>
-	<input required type="text" class="register-input" placeholder="Nom" name="nom" oninvalid="this.setCustomValidity('Veuillez entrer une saisie valide')">
-	<input required type="text" class="register-input" placeholder="Prénom" name="prenom" oninvalid="this.setCustomValidity('Veuillez entrer une saisie valide')">
+	<input required type="text" class="register-input" placeholder="Nom" name="nom" >
+	<input required type="text" class="register-input" placeholder="Prénom" name="prenom" >
 	<br/>
 	<p> Êtes vous un étudiant ? </p>
 	<br/><div class="register-switch">
@@ -68,14 +68,14 @@ class="register-switch-input" checked>
 	<div id="kakashi">
 	<p> Établissement d'étude : </p><br/>
 
-	<input required type="text" class="register-input" placeholder="Établissement" name="etablissement" oninvalid="this.setCustomValidity('Veuillez entrer une saisie valide')">
+	<input type="text" class="register-input" placeholder="Établissement" name="etablissement" >
 
 	</div>
 <br/>
 
 
-	<input required type="email" class="register-input" placeholder="Email" name="email" oninvalid="this.setCustomValidity('Veuillez entrer une saisie valide')">
-	<input required type="text" class="register-input" placeholder="N° de téléphone" name="telephone" oninvalid="this.setCustomValidity('Veuillez entrer une saisie valide')">
+	<input required type="email" class="register-input" placeholder="Email" name="email" >
+	<input required type="text" class="register-input" placeholder="N° de téléphone" name="telephone" >
 
 
 	<br/>
@@ -84,7 +84,7 @@ class="register-switch-input" checked>
 	<div id="put">
 	<p> Quel activité vous intéresse ?</p><br/>
 
-	 <input type="checkbox" name="ctf" value="ctf"> Capture The Flag. <br>
+	 <input type="checkbox" name="ctf" value="ctf"> Investigation Numérique. <br>
 	 <input type="checkbox" name="git" value="git"> Git<br>
 	 <input type="checkbox" name="gimp" value="gimp"> GIMP/Inkscape<br>
 </div>
@@ -93,7 +93,7 @@ class="register-switch-input" checked>
 	<p> Motivation</p>
 		<input required name="interested" type="text" id="interested" class="register-input" placeholder="Je suis interessé(e) parce que .."><br/><br/>
   <br/><br/>
-	<div class="g-recaptcha" data-sitekey="<?php echo $api_secret?>"></div>
+	<div class="g-recaptcha" data-sitekey="<?php echo $api_public?>"></div>
 	<input type="submit" name="submit" value="Inscription" class="register-button" >
   </form>
 

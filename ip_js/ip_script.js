@@ -299,7 +299,7 @@ function showSlides(n) {
   }
 //   slides[slideIndex-1].style.display = "block";
 //   if(dots[slideIndex-1]) {
- //   dots[slideIndex-1].className += " active";
+    dots[slideIndex-1].className += " active";
 //   }
 } 
 

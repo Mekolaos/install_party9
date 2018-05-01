@@ -228,13 +228,13 @@ setTimeout(function(){ saske.style.display="none";}, 5000);};
                 <br/><br/>
               <div id="owl-demo" class="owl-carousel owl-theme" style="width: 300px">
 
-                 
+                 <div class="item lsb-preview"><p class="text_desco">(...glissez vers la droite)</p></div>
                 <div class="item"><a href="images/NLP_descriptions.jpg" data-lity="gal"><img src="images/nlp.png" class="himage" /> <div class="middle"><div class="kakashi"><a href="images/NLP_descriptions.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
                 <div class="item""><a href="images/sage_descriptions.jpg" data-lity="gal"><img src="images/sagem.png" class="himage" height="200px" width="300px" /><div class="middle"><div class="kakashi"><a href="images/sage_descriptions.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
                 <div class="item lsb-preview"><a href="images/open_stack_descriptions.jpg" data-lity="gal"><img src="images/openstack.png" class="himage" height="200px" width="300px" /><div class="middle"><div class="kakashi"><a href="images/open_stack_descriptions.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
                 <div class="item lsb-preview"><a href="images/wiseway_descriptions.jpg" data-lity="gal"><img src="images/openproj.png" class="himage" height="200px" width="300px" /><div class="middle"><div class="kakashi"><a href="images/images/wiseway_descriptions.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
                 <div class="item lsb-preview"><a href="images/debat_descriptions.jpg" data-lity="gal"><img src="images/elquaada.png" class="himage" height="200px" width="300px" /><div class="middle"><div class="kakashi"><a href="images/debat_descriptions.jpg" data-lity="gal"><img src="images/plus.png" style="height: 40px; width: 40px;" /></a></div></div></a></div>
-                <div class="item lsb-preview"><h1>6</h1></div>
+                
               </div>
               
                  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 align-center features_anim7" >
